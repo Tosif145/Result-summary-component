@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk';
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.card{
+    width: 550px;
+    display: flex;
+    gap: 25px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0), 0 0px 0px rgba(0, 0, 0, 0.0), 0 0px 0px rgba(0, 0, 0, 0.1), 0 0px 0px rgba(0, 0, 0, 0.0), 0 32px 64px rgba(0, 0, 0, 0.1), 0 64px 128px rgba(0, 0, 0, 0.1), 0 128px 256px rgba(0, 0, 0, 0.0);
+    border-radius: 15px;
+    border-radius: 15px;
+}
+.your-result{
+    width: 290px;
+    height: auto;
+    background: linear-gradient(to bottom, hsl(252,100%,67%),hsl(241, 81%, 54%));
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.your-result span{
+    margin-top: 25px;
+    opacity: .7;
+    font-size: 18px;
+}
+
+.circle{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.circle h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.circle p {
+    opacity: .5;
+    margin: 0;
+    font-size: 14px;
+}
+
+.mention {
+    width: 100%;
+}
+
+.mention h1, p{
+    width: fit-content;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.mention h1{
+    font-size: 20px;
+}
+
+.mention p{
+    width: 80%;
+    margin: 10px auto;
+    color: hsl(241, 100%, 89%);
+}
+
+.summary{
+    width: 220px;
+    height: 351px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px 0 0 0;
+    gap: 10px;
+}
+
+.summary h2{
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.lista {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;   
+    background: hsla(340, 75%, 76%, .1);
+}
+
+.lista p{
+    display: flex;
+    align-items: center;
+    margin: 10px 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.lista:nth-child(2) p:first-child{
+    color: hsl(0, 100%, 67%);
+    
+  }
+.lista:nth-child(3) p:first-child {
+  color: hsl(39, 100%, 56%);
+}
+.lista:nth-child(4) p:first-child {
+  color: hsl(166, 100%, 37%);
+}
+.lista:nth-child(5) p:first-child {
+  color: hsl(234, 85%, 45%);
+}
+.lista p:last-child{
+    color: hsla(0, 0%, 12%, 0.9);
+    font-size: 16px;
+}
+
+.lista span{
+    color: hsl(181, 26%, 51%);
+    margin: 0;
+    padding: 0;
+    opacity: .6;
+    font-size: 15px;
+}
+
+.summary >div:nth-child(2) {
+    background-color:  hsl(0, 100%, 67%,.1);
+}
+.summary >div:nth-child(3) {
+    background-color:  hsl(39, 100%, 56%,.1);
+}
+.summary >div:nth-child(4) {
+    background-color:  hsl(166, 100%, 37%,.1);
+}
+.summary >div:nth-child(5) {
+    background-color:  hsl(234, 85%, 45%,.1)
+}
+
+summary> button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    color: white;
+    font-weight: 700;
+    width: 75%;
+    height: 30px;
+    margin: 15px auto 15px 25px;
+    background: blue;
+    border-radius: 20px;
+    border: blue;
+}
+
+/* media queries */
+@media screen and (max-width: 767px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        width: 100%;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        gap: 0;
+    }
+    .your-result{
+        height: 45vh;
+        border-radius: 0 0 30px 30px;
+          width: 100%;
+      }
+    .your-result span{
+        margin-top: 25px;
+        opacity: .8;
+        font-size: 18px;
+    }
+    .circle {
+        margin: 20px;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    
+     
+   
+}
